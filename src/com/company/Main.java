@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.arrayAndSortAlgorithm.*;
+import com.company.binaryTree.Tree;
 import com.company.hashTable.ChainedHashTable;
 import com.company.linkedList.EmployDoubleLinkedList;
 import com.company.linkedList.EmployLinkedList;
@@ -32,9 +33,9 @@ public class Main {
 
 
 // ----------- Search Algorithm -----------
-        int[] arr = {-12, -3, 5, 20, 100};
+//        int[] arr = {-12, -3, 5, 20, 100};
 //        System.out.println(BinarySearch.binarySearch(arr, 8));
-        System.out.println(BinarySearch.recursionBinarySearch(arr, -3, 0, arr.length - 1));
+//        System.out.println(BinarySearch.recursionBinarySearch(arr, -3, 0, arr.length - 1));
 
 
 // -----------  Linked list -----------
@@ -125,5 +126,25 @@ public class Main {
 //        }
 //
 //        System.out.println("Is palindrome");
+
+
+// ----------- Tree -----------
+//          10
+//      8        17
+//           11      20
+
+        Tree tree = new Tree();
+        tree.insert(10);
+        tree.insert(8);
+        tree.insert(17);
+        tree.insert(11);
+        tree.insert(20);
+// Traverse in-order : 8 -> 10 -> 11 -> 17 -> 20
+        tree.traverseInOrder();
+
+
+
+
+
     }
 }
