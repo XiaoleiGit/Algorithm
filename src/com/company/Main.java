@@ -139,8 +139,15 @@ public class Main {
         tree.insert(17);
         tree.insert(11);
         tree.insert(20);
+
 // Traverse in-order : 8 -> 10 -> 11 -> 17 -> 20
         tree.traverseInOrder();
+
+        System.out.println();
+        System.out.println(tree.get(11));
+        System.out.println(tree.get(9));
+        System.out.println(tree.min());
+        System.out.println(tree.max());
 
 
 
